@@ -15,6 +15,15 @@ namespace files {
   }
 
   /**
+  * Initialize file system
+  */
+  //% blockId="files_init" block="file system init"
+  //% weight=91
+  export function initFS() {
+      files.FSinit();
+  }
+
+  /**
    * Opens a new file
    * @param filename file name to open, eg: "data.txt"
    */

@@ -12,6 +12,15 @@ declare namespace files {
      * @param filename file name, eg: "output.txt"
      * @param text the string to append to the end of the file
      */
+    //% blockId="files_init" block="file system init"
+    //% weight=91 shim=files::FSinit
+    function FSinit(): void;
+
+    /**
+     * Appends text and a new line to a file
+     * @param filename file name, eg: "output.txt"
+     * @param text the string to append to the end of the file
+     */
     //% blockId="files_append_line" block="file %filename|append line %text"
     //% blockExternalInputs=1 weight=90 blockGap=8 shim=files::appendLine
     function appendLine(filename: string, text: string): void;

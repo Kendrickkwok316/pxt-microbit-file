@@ -44,6 +44,18 @@ void initFileSystem()
     * @param filename file name, eg: "output.txt"
     * @param text the string to append to the end of the file
     */
+//% blockId="files_init" block="file system init"
+//% weight=91
+void FSinit()
+{
+    initFileSystem();
+}
+
+/**
+    * Appends text and a new line to a file
+    * @param filename file name, eg: "output.txt"
+    * @param text the string to append to the end of the file
+    */
 //% blockId="files_append_line" block="file %filename|append line %text"
 //% blockExternalInputs=1 weight=90 blockGap=8
 void appendLine(StringData *filename, StringData *text)
