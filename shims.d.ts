@@ -12,8 +12,7 @@ declare namespace files {
      * @param filename file name, eg: "output.txt"
      * @param text the string to append to the end of the file
      */
-    //% blockId="files_init" block="file system init"
-    //% weight=91 shim=files::FSinit
+    //% shim=files::FSinit
     function FSinit(): void;
 
     /**
