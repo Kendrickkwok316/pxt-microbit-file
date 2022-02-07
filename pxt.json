@@ -1,0 +1,27 @@
+{
+    "name": "filesystem",
+    "version": "0.0.1",
+    "description": "File system for Micro:bit",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "filesystem.ts",
+        "filesystem.cpp",
+        "shims.d.ts",
+        "enums.d.ts"
+    ],
+    "testFiles": [],
+    "public": true,
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "interface": {
+                    "fs": 1
+                }
+            }
+        }
+    }
+}

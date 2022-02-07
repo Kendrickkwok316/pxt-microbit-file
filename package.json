@@ -1,0 +1,23 @@
+{
+  "name": "pxt-microbit-file",
+  "version": "0.0.1",
+  "description": "[![Community Discord](https://img.shields.io/discord/448979533891371018.svg)](https://aka.ms/makecodecommunity)",
+  "main": "index.js",
+  "dependencies": {
+    "pxt-microbit": "^4.1.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kendrickkwok316/pxt-microbit-file.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kendrickkwok316/pxt-microbit-file/issues"
+  },
+  "homepage": "https://github.com/Kendrickkwok316/pxt-microbit-file#readme"
+}
