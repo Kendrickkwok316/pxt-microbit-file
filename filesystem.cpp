@@ -1,6 +1,7 @@
 #include "pxt.h"
 #include "MicroBitFile.h"
 #include "MicroBitFileSystem.h"
+#include "ManagedString.h"
 
 using namespace pxt;
 
@@ -40,14 +41,17 @@ void initFileSystem()
 }
 
 /**
-    * Appends text and a new line to a file
-    * @param filename file name, eg: "output.txt"
-    * @param text the string to append to the end of the file
+    * Test function for the FS system
     */
 //%
 void FSinit()
 {
     initFileSystem();
+    ManagedString fn("test.txt");
+    ManagedString t("text");
+    MicroBitFile f(fn);
+    f.append(t);
+    f.close();
 }
 
 /**
