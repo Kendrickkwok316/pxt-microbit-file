@@ -51,7 +51,7 @@ int FSinit()
     ManagedString fn("test.txt");
     ManagedString t("30");
     MicroBitFile f(fn);
-    f.append(t);
+    //f.append(t);
     f.close();
     MicroBitFile f1(fn);
     int diu = f1.read() - '0';
