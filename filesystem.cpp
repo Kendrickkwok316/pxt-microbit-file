@@ -47,12 +47,16 @@ void initFileSystem()
 int FSinit()
 {
     initFileSystem();
+    int ttr = 30;
     ManagedString fn("test.txt");
-    ManagedString t("text");
+    ManagedString t("30");
     MicroBitFile f(fn);
     f.append(t);
     f.close();
-    return 15;
+    MicroBitFile f1(fn);
+    int diu = f1.read() - '0';
+    f1.close();
+    return diu;
 }
 
 /**
