@@ -19,8 +19,9 @@ namespace files {
   */
   //% blockId="files_init" block="file system init"
   //% weight=91
-  export function initFS() {
+  export function initFS(): string {
       files.FSinit();
+      return "IN";
   }
 
   /**
