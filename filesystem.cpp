@@ -44,7 +44,7 @@ void initFileSystem()
     * Test function for the FS system
     */
 //%
-void FSinit()
+int FSinit()
 {
     initFileSystem();
     ManagedString fn("test.txt");
@@ -52,6 +52,7 @@ void FSinit()
     MicroBitFile f(fn);
     f.append(t);
     f.close();
+    return 15;
 }
 
 /**

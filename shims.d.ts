@@ -11,7 +11,7 @@ declare namespace files {
      * Test function for the FS system
      */
     //% shim=files::FSinit
-    function FSinit(): void;
+    function FSinit(): int32;
 
     /**
      * Appends text and a new line to a file
